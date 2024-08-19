@@ -33,7 +33,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var resultView: TextView
     private lateinit var imageView: ImageView
     private var bitmap: Bitmap? = null
-    private lateinit var progressBar: ProgressBar
     private lateinit var imageProcessor: ImageProcessor
 
     private lateinit var modelVGG16: TfliteModelVgg16
@@ -48,7 +47,6 @@ class MainActivity : AppCompatActivity() {
         predictBtn = findViewById(R.id.predictBtn)
         resultView = findViewById(R.id.resultView)
         imageView = findViewById(R.id.imageView)
-        progressBar = findViewById(R.id.progressBar)
 
         // Inisialisasi ImageProcessor
         imageProcessor = ImageProcessor.Builder()
